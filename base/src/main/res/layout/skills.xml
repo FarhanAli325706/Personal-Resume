@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:gravity="end"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/averageColor"
+            android:rating="5"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:secondaryProgressTint="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:gravity="left|center"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>
