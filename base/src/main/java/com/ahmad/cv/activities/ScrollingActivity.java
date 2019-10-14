@@ -5,6 +5,8 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+
+import com.ahmad.cv.base.MyRecycleView;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.rhexgomez.typer.roboto.TyperRoboto;
@@ -22,6 +24,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import java.util.Objects;
 public class ScrollingActivity extends AppCompatActivity {
@@ -107,5 +110,10 @@ public class ScrollingActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void viewSkills(View view) {
+        Intent intent=new Intent(this, MyRecycleView.class);
+        startActivity(intent);
     }
 }

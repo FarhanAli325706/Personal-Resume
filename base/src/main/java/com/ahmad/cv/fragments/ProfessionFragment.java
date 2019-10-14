@@ -1,6 +1,9 @@
 package com.ahmad.cv.fragments;
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.ahmad.cv.base.MyRecycleView;
+import com.ahmad.cv.base.myAdapter;
 import com.ahmad.cv.model.DemoItem;
 import com.ahmad.cv.adapters.ProfessionAdapter;
 import com.ahmad.cv.base.R;
@@ -13,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
@@ -51,4 +55,5 @@ public class ProfessionFragment extends Fragment {
         return demoItems;
 
     }
+
 }

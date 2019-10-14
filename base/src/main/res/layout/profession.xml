@@ -19,195 +19,45 @@
 
         >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical"
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             >
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/hands_on_skills"
+                android:textColor="@color/blackColor"
+                android:textSize="18sp"
+                app:fontFamily="@font/roboto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <RatingBar
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="0dp"
-                    android:gravity="end"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="@color/averageColor"
-                    android:rating="5"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:secondaryProgressTint="@android:color/transparent" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_rounded"
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginTop="1dp"
-                    android:gravity="left|center"
-                    android:text="@string/skill_title_1"
-                    android:textSize="16sp"
-                    app:fontFamily="@font/roboto"
-                    card_view:ignore="RtlHardcoded" />
-            </RelativeLayout>
+                android:onClick="viewSkills"
+                android:text="View Skills"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skills"
+                app:layout_constraintVertical_bias="0.0">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <RatingBar
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="@color/averageColor"
-                    android:rating="5"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:secondaryProgressTint="@android:color/transparent" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="0dp"
-                    android:gravity="left|center"
-                    android:text="@string/skill_title_2"
-                    android:textSize="16sp"
-                    app:fontFamily="@font/roboto"
-                    card_view:ignore="RtlHardcoded" />
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <RatingBar
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="@color/averageColor"
-                    android:rating="5"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:secondaryProgressTint="@android:color/transparent"
-
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="0dp"
-                    android:gravity="left|center"
-                    android:text="@string/skill_title_3"
-                    android:textSize="16sp"
-                    app:fontFamily="@font/roboto"
-                    card_view:ignore="RtlHardcoded" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <RatingBar
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_alignParentEnd="true"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="@color/averageColor"
-                    android:rating="5"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:secondaryProgressTint="@android:color/transparent"
-
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="0dp"
-                    android:gravity="left|center"
-                    android:text="@string/skill_title_4"
-                    android:textSize="16sp"
-                    app:fontFamily="@font/roboto"
-                    card_view:ignore="RtlHardcoded" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <RatingBar
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_alignParentEnd="true"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="@color/averageColor"
-                    android:rating="5"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:secondaryProgressTint="@android:color/transparent"
-
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="left|center"
-                    android:text="@string/skill_title_5"
-                    android:textSize="16sp"
-                    app:fontFamily="@font/roboto"
-                    card_view:ignore="RtlHardcoded" />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/hands_on_skills"
-            android:textColor="@color/blackColor"
-            android:textSize="18sp"
-            app:fontFamily="@font/roboto" />
 
 
     </androidx.cardview.widget.CardView>
@@ -240,13 +90,49 @@
                 android:paddingLeft="2dp"
                 />
             <TextView
-                android:id="@+id/none"
+                android:id="@+id/project"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="None"
+                android:text="Projects"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bejewel Blitz"
                 android:textSize="15sp"
                 android:textStyle="normal"
-                android:paddingLeft="10dp"
+                android:paddingLeft="30dp"
+                />
+            <TextView
+                android:id="@+id/fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FaceBook"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="30dp"
+                />
+            <TextView
+                android:id="@+id/snake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snake Game"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="30dp"
+                />
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinema Website"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="30dp"
                 />
         </LinearLayout>
 
