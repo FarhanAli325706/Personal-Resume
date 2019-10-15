@@ -11,7 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyRecycleView"></activity>
+        <activity android:name=".MyRecycleView">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="farhanali325706.github.io"
+                    android:pathPrefix="/resume/" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.ahmad.cv.activities.ScrollingActivity"
             android:label="@string/app_name"
@@ -32,7 +44,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="shahwaiz90.github.io"
+                    android:host="farhanali325706.github.io"
                     android:pathPattern="/resume/"
                     android:scheme="https" />
             </intent-filter>
